@@ -1,0 +1,17 @@
+{
+    "name": "renathy/examen",
+    "description": "Primer Examen parcial",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renato",
+            "email": "renathyventas@gmail.com"
+        }
+    ],
+    "require": {}
+}

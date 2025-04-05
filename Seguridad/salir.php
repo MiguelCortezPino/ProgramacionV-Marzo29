@@ -1,0 +1,20 @@
+<?php
+session_start();
+session_destroy();
+$ArrVsession = array();
+$ArrVsession[0] = "Token";
+$ArrVsession[1] = "Id";
+$ArrVsession[2] = "NombreUsuario";
+$ArrVsession[3] = "ApellidoUsuario";
+$ArrVsession[4] = "IdUsiario";
+$ArrVsession[5] = "ClaveUsuario";
+$ArrVsession[6] = "Correo";
+$ArrVsession[7] = "Rol";
+setcookie($ArrVsession[0], "", time() - 1, "/");
+setcookie($ArrVsession[1], "", time() - 1, "/");
+setcookie($ArrVsession[2], "", time() - 1, "/");
+setcookie($ArrVsession[3], "", time() - 1, "/");
+setcookie($ArrVsession[4], "", time() - 1, "/");
+setcookie($ArrVsession[6], "", time() - 1, "/");
+setcookie($ArrVsession[7], "", time() - 1, "/");
+header("Location: ../index.php");
